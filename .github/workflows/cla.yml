@@ -27,7 +27,7 @@ jobs:
         with:
           remote-organization-name: doggydogworld
           remote-repository-name: cla-test-private
-          path-to-signatures: 'version1/signatures.json'
+          path-to-signatures: 'version1_signatures.json'
           path-to-document: 'https://github.com/doggydogworld/cla-test/blob/main/CLA.md'
           # branch should not be protected
           branch: 'main'
