@@ -6,3 +6,6 @@ Setup Process:
 1. Create a CLA.md that is at a publically accesible URL
 1. Add a github action for the CLA action
   1. Example: https://github.com/doggydogworld/cla-test/blob/main/.github/workflows/cla.yml   
+
+Potential Gotcha's
+* PAT will usually have an expiration which can break the bot from reading/writing signatures.
