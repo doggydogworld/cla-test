@@ -8,31 +8,31 @@ jobs:
     env:
       ONE: >-
         ${{
-        true && 'branch/v17' ||
-        false && 'branch/v16' ||
-        false && 'branch/v15' ||
-        'master'
+          true && 'branch/v17' ||
+          false && 'branch/v16' ||
+          false && 'branch/v15' ||
+          'master'
         }}
       TWO: >-
         ${{
-        false && 'branch/v17' ||
-        true && 'branch/v16' ||
-        false && 'branch/v15' ||
-        'master'
+          false && 'branch/v17' ||
+          true && 'branch/v16' ||
+          false && 'branch/v15' ||
+          'master'
         }}
       THREE: >-
         ${{
-        false && 'branch/v17' ||
-        false && 'branch/v16' ||
-        true && 'branch/v15' ||
-        'master'
+          false && 'branch/v17' ||
+          false && 'branch/v16' ||
+          true && 'branch/v15' ||
+          'master'
         }}
       FOUR: >-
         ${{
-        false && 'branch/v17' ||
-        false && 'branch/v16' ||
-        false && 'branch/v15' ||
-        'master'
+          false && 'branch/v17' ||
+          false && 'branch/v16' ||
+          false && 'branch/v15' ||
+          'master'
         }}
     steps:
       - name: "echoing"
