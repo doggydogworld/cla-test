@@ -13,21 +13,27 @@ jobs:
         false && 'branch/v15' ||
         'master'
         }}
-      TWO: |
+      TWO: >-
+        ${{
         false && 'branch/v17' ||
         true && 'branch/v16' ||
         false && 'branch/v15' ||
         'master'
-      THREE: |
+        }}
+      THREE: >-
+        ${{
         false && 'branch/v17' ||
         false && 'branch/v16' ||
         true && 'branch/v15' ||
         'master'
-      FOUR: |
+        }}
+      FOUR: >-
+        ${{
         false && 'branch/v17' ||
         false && 'branch/v16' ||
         false && 'branch/v15' ||
         'master'
+        }}
     steps:
       - name: "echoing"
         run: |
